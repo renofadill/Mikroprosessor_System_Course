@@ -1,2 +1,2 @@
-# Mikroprosessor_System_Course
+# Microprosessor_System_Course
 Midterm Exam 
