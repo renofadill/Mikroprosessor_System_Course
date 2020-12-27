@@ -1,0 +1,23 @@
+;hello, my name is Reno Muhammad Fadilla
+;currently i am an undergraduate student in State Islamic University (UIN) of Sunan Gunung Djati Bandung
+;these codes was uploaded to complete midterm exam of system mikroprosessor practicum course
+;these codes are about the Warehouse Lighting Installation System Using IC AT89C51
+
+ORG 00H			
+MULAI:			
+MOV P0,#00001111B	
+MOV P2,#00001111B	
+SWITCH : 		
+MOV A,P0		
+RRC A			
+MOV P2,P0		
+INC P2			
+ACALL DELAY		
+;DELAY
+DELAY:MOV R0,#255	
+DELAY1:MOV R1,#255	
+DELAY2:NOP		
+DJNZ R1,DELAY2		
+DJNZ R0,DELAY1		
+RET			
+END
